@@ -1,0 +1,131 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/CurriculoBootstrap/iframeStyle.css">
+  
+  <title>Sobre Mim</title>
+</head>
+
+<div id="contato" class="container scroll">
+  <h2>Contato</h2>
+  <div class="container">
+      <p class="justificado">Para entrar em contato, utilize o formulário abaixo:</p>
+      <form action="">
+          <div class="row">
+              <div class="col-6">
+                  <label for="nome" class="form-label"><strong>Nome</strong> <span
+                          class="obrigatorio">*</span></label>
+                  <input type="text" class="form-control" id="nome" placeholder="Informe seu nome" required>
+              </div>
+              <div class="col-6">
+                  <label for="sobrenome" class="form-label"><strong>Sobrenome</strong> <span
+                          class="obrigatorio">*</span></label>
+                  <input type="text" class="form-control" id="sobrenome" placeholder="Informe seu sobrenome"
+                      required>
+              </div>
+          </div>
+          <div class="row my-3">
+              <div class="col-6">
+                <label for="email" class="form-label"><strong>Email</strong><span
+                          class="obrigatorio">*</span></label>
+                  <input type="email" class="form-control" id="email"
+                      placeholder="Informe seu email" required>
+              </div>
+              <div class="col-6">
+                  <label for="telefone" class="form-label"><strong>Telefone</strong><span
+                          class="obrigatorio">*</span></label>
+                  <input type="tel" class="form-control" id="telefone"
+                      placeholder="Informe seu telefone"
+                      pattern="([0-9]{2})[0-9]{5}-[0-9]{4}" required>
+              </div>
+              <div class="row my-3">
+                  <div class="col-12">
+                      <label for="mensagem" class="form-label"><strong>Mensagem*</strong></label>
+                      <textarea class="form-control" id="mensagem" rows="3"
+                          placeholder="Conte sua história..."></textarea>
+                  </div>
+              </div>
+              <div>
+                <div class="mb-3">
+                  <label for="formFile" class="form-label"><strong>Escolher arquivo</strong></label>
+                  <input class="form-control" type="file" id="formFile">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="linguagem" class="form-label fw-bold">Selecione a linguagem</label>
+                  <select class="form-select" multiple aria-label="Multiple select example">
+                    <option value="ja">JAVA</option>
+                    <option value="py">Python</option>
+                    <option value="go">GoLang</option>
+                    <option value="ph">PHP</option>
+                  </select>
+                  <p><i>Para selecionar várias linguagens, segure a tecla CTRL.</i></p>
+                </div>
+                <div class="col-md-6">
+                  <label for="banco" class="form-label fw-bold">Selecione o Banco de Dados</label>
+                  <div class="d-flex flex-wrap">
+                    <div class="form-check me-3">
+                      <input class="form-check-input" type="radio" name="bancoDados" id="radioMySql" value="mysql" checked>
+                      <label class="form-check-label" for="radioMySql">MySQL</label>
+                    </div>
+                    <div class="form-check me-3">
+                      <input class="form-check-input" type="radio" name="bancoDados" id="radioPostgres" value="postgres">
+                      <label class="form-check-label" for="radioPostgres">PostgresSQL</label>
+                    </div>
+                    <div class="form-check me-3">
+                      <input class="form-check-input" type="radio" name="bancoDados" id="radioMongo" value="mongodb">
+                      <label class="form-check-label" for="radioMongo">MongoDB</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="bancoDados" id="radioOutro" value="outro">
+                      <label class="form-check-label" for="radioOutro">Outro</label>
+                    </div>
+                  </div>
+                </div>
+              </div>             
+              <div class="row">
+                <div class="col-md-6">
+                  <label for="dataHora" class="form-label">
+                      <strong>Data/Hora<span class="obrigatorio">*</span></strong>
+                  </label>
+                  <input type="datetime-local" class="form-control" id="dataHora" required
+                         min="2025-05-01" max="2025-12-31">
+              </div>
+                <div class="col-md-6">
+                    <label for="banco" class="form-label fw-bold">Turno para as reuniões</label>
+                    <div class="d-flex flex-wrap">
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Manhã
+                            </label>
+                        </div>
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">
+                                Tarde
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                            <label class="form-check-label" for="defaultCheck3">
+                                Noite
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row my-5">
+            <div class="col-12 text-center">
+                <button type="reset" class="btn formulario me-3"><strong>Cancelar</strong></button>
+                <button type="submit" class="btn formulario"><strong>Enviar</strong></button>
+            </div>
+        </div>
+    </form>
+  </div>
+</div>

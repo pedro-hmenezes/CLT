@@ -25,8 +25,8 @@ footer {
 }
 
 #menuPedro {
-    background-color: var(--terra);
-    padding: 0.7em;     
+    background-color: rgba(64, 24, 9, 0.8);
+    padding: 0.7em;
     border-radius: 20px;
 }
 
@@ -35,7 +35,7 @@ footer {
 }
 
 a.menuPedro {
-    color: var(--caramelo);
+    color: var(--areia);
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2em;
@@ -45,7 +45,7 @@ a.menuPedro {
 }
 
 a.menuPedro:hover {
-    color: var(--areia);
+    color: var(--caramelo-white);
 }
 
 a:link {
@@ -53,27 +53,23 @@ a:link {
 }
 
 img.foto {
-    width: 250px;
+    width: 225px;
     box-sizing: border-box;
     border: solid #40250D 5px;
     border-radius: 25px;
     padding: 3px;
 }
 
-h1,h2,h3,h4,h5,h6 {
-    color: var(--cor3);
-}
-
 h4.subTitulo {
     color: var(--caramelo-white);
 }
 
-div.hrBcg {
-    background-color: var(--cor4);
-}
-
 p.justificado {
     text-align: justify;
+}
+
+iframe.mapa {
+    border-radius: 15px;
 }
 
 div.social {
@@ -83,4 +79,8 @@ div.social {
 
 .tab {
     margin-left: 1em;
+}
+
+footer {
+    color: var(--caramelo);
 }

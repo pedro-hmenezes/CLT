@@ -1,0 +1,92 @@
+:root {
+    --bronze: #736656;
+    --areia: #F2E8DC;
+    --cafe: #40250D;
+    --caramelo: #BF793B;
+    --terra: #401809;
+
+    --caramelo-white: #d19d70;
+
+    --bs-primary: var(--caramelo);
+
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--areia);
+    margin: 5%;
+    background-color: rgba(64, 24, 9, 0.8);
+}
+
+h2 {
+    color: var(--caramelo-white);
+}
+
+p {
+    text-align: justify;
+}
+
+a {
+    color: var(--caramelo);
+}
+
+dt {
+    color: var(--caramelo-white);
+}
+
+.formulario {
+    background-color: var(--caramelo); /* roxo, por exemplo */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+  
+.formulario:hover {
+    background-color: var(--caramelo-white);
+}
+
+.form-control:focus {
+    border-color: var(--caramelo);
+    box-shadow: 0 0 5px rgba(210, 105, 30, 0.5);
+    outline: none;
+}
+
+.form-select:focus {
+    border-color: var(--caramelo);
+    box-shadow: 0 0 5px rgba(210, 105, 30, 0.5);
+    outline: none;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #BF793B;
+}
+
+input[type="datetime-local"] {
+    color-scheme: dark;
+    accent-color: var(--caramelo);
+}
+
+.form-check-input:checked {
+    background-color: var(--caramelo);
+    border-color: var(--caramelo);
+}
+
+.form-select option:checked {
+    background-color: var(--caramelo);
+    color: white;
+}
+
+.border-caramelo {
+    border: 1px solid var(--caramelo);
+}
+
+.bg-caramelo {
+    background-color: var(--caramelo);
+    color: white;
+}
+
+.text-areia {
+    color: var(--areia);
+}
+
